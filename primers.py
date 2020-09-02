@@ -1,5 +1,12 @@
+import sys
+
 print("Nombres primers fins a N")
-n = int(input("Indica N --> "))
+
+try:
+	n = int(input("Indica N --> "))
+except ValueError:
+	print("L'entrada ha de ser un nombre sencer")
+	sys.exit(1)
 
 num = 2
 primers = []
@@ -14,4 +21,5 @@ while (num <= n):
 		primers.append(num)
 	num=num+1
 
+#Imprimir llista amb els N nombres primers
 print(primers)
