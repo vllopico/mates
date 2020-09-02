@@ -1,10 +1,17 @@
 import math
 import cmath
+import sys
 
 print("ax^2 + bx + c = 0")
-a = float(input("Coeficient a: "))
-b = float(input("Coeficient b: "))
-c = float(input("Coeficient c: "))
+
+try:
+	a = float(input("Coeficient a: "))
+	b = float(input("Coeficient b: "))
+	c = float(input("Coeficient c: "))
+except ValueError:
+	print("Le entrades han de ser numèriques")
+	sys.exit(1)
+	
 
 print("Equació segon grau tipus -> "+str(a)+"x²+"+str(b)+"x+"+str(c)+"=0")
 
