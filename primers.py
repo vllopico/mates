@@ -4,8 +4,11 @@ print("Nombres primers fins a N")
 
 try:
 	n = int(input("Indica N --> "))
+	if n <= 1:
+		negatiu = ValueError
+		raise negatiu
 except ValueError:
-	print("L'entrada ha de ser un nombre sencer")
+	print("L'entrada ha de ser un nombre natural > 1")
 	sys.exit(1)
 
 num = 2
