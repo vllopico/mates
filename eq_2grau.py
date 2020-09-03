@@ -31,7 +31,5 @@ else:
 		print("Dues solucions")
 		print("x_1 --> ", x_1)
 		print("x_2 --> ", x_2)
-		if (b == 0):
-			print("Infinites solucions, es mostren dos")
 	else:
 		print("No hi ha solució en R, buscar en C")
